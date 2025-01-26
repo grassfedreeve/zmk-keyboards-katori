@@ -15,6 +15,7 @@
 		*/
 		;
 	io-channels = <&adc 1>;
+	power-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;
 };
 
 &adc {
@@ -31,13 +32,6 @@
         zephyr,acquisition-time = <ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 3)>;
         zephyr,resolution = <8>;
     };
-};
-
-&matrix {
-	/*
-	power-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;
-	matrix-warm-up-us = <500>;
-	*/
 };
 
 &uicr {

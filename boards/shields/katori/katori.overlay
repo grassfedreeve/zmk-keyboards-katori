@@ -85,7 +85,7 @@
 	matrix: matrix {
 		compatible = "zmk,kscan-ec-matrix";
 
-		matrix-relax-us = <60>;
+		matrix-relax-us = <30>;
 		adc-read-settle-us = <1>;
 
 		strobe-gpios
